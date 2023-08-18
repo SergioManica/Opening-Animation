@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Circle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-image: url("image002alen.jpg");
+            background-size: cover;
+            margin: 0;
+        }
+
+        .circleSettings {
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+        }
+
+        .circle1 {
+            border: solid 180px #F1EEAB;
+            background-color: transparent;
+        }
+
+        .circle2 {
+            border: solid 180px white;
+            background-color: transparent;
+        }
+
+        .circle3 {
+            border: solid 180px #FFF3AF;
+            background-color: transparent;
+        }
+
+        .initialBackground {
+            background-color: #0BA4B9;
+            position: absolute;
+            inset: 0;
+        }
+
+        .test {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            width: 500px;
+            height: 400px;
+            font-size: 5rem;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.488);
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">Welcome</div>
+    <div class="initialBackground"></div>
+    <div class="circle1 circleSettings"></div>
+    <div class="circle2 circleSettings"></div>
+    <div class="circle3 circleSettings"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
