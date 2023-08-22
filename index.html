@@ -76,6 +76,9 @@
             inset: 0;
             text-align: center;
             font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .test {
@@ -98,17 +101,19 @@
 <body>
     <div class="test">Welcome</div>
     <div #initialBackground class="initialBackground">
-        <strong>
-            Animation of Rectangles<br />
-        </strong>
-        Press '1' to play <br />
-        Press 'Q' to reverse <br />
-        <br />
-        <strong>
-            Animation of Circles <br />
-        </strong>
-        Press '2' to play<br />
-        Press 'W' to reverse <br />
+        <div>
+            <strong>
+                Animation of Rectangles<br />
+            </strong>
+            Press '1' to play <br />
+            Press 'Q' to reverse <br />
+            <br />
+            <strong>
+                Animation of Circles <br />
+            </strong>
+            Press '2' to play<br />
+            Press 'W' to reverse <br />
+        </div>
     </div>
     <div #circle1 class="circle1 circleSettings"></div>
     <div #circle2 class="circle2 circleSettings"></div>
