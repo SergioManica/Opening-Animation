@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation Circle</title>
+    <title>Animations</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
     <style>
         body {
@@ -16,14 +16,14 @@
             margin: 0;
         }
 
-        .whiteRectangleStyle {
-            background-color: white;
+        .smallRectangleStyle {
+            background-color:  #315259;            
             width: 50vw;
             height: 50vh;
         }
 
-        .purpleRectangleStyle {
-            background-color: #DE81F4;
+        .bigRectangleStyle {
+            background: linear-gradient(#CE5759, #315259);            
             width: 50vw;
             height: 100vh;
         }
@@ -31,12 +31,16 @@
         .leftColumn {
             position: absolute;
             top: -150%;
+            text-align: end;
+            font-size: 2rem;
         }
 
         .rightColumn {
             position: absolute;
             right: 0;
             bottom: -150%;
+            text-align: start;
+            font-size: 2.5rem;
         }
 
 
@@ -52,22 +56,22 @@
         }
 
         .circle1 {
-            border: solid 180px #F1EEAB;
+            border: solid 180px #C75759;
             background-color: transparent;
         }
 
         .circle2 {
-            border: solid 180px white;
+            border: solid 180px #775459;
             background-color: transparent;
         }
 
         .circle3 {
-            border: solid 180px #FFF3AF;
+            border: solid 180px #2B4D56;
             background-color: transparent;
         }
 
         .initialBackground {
-            background-color: #0BA4B9;
+            background: linear-gradient(#315259,#CE5759, #315259);            
             position: absolute;
             inset: 0;
             text-align: center;
@@ -110,12 +114,12 @@
     <div #circle2 class="circle2 circleSettings"></div>
     <div #circle3 class="circle3 circleSettings"></div>
     <div #leftColumn class="leftColumn">
-        <div class="purpleRectangleStyle"></div>
-        <div class="whiteRectangleStyle"></div>
+        <div class="smallRectangleStyle"></div>
+        <div class="bigRectangleStyle">YOU ARE</div>
     </div>
     <div #rightColumn class="rightColumn">
-        <div class="whiteRectangleStyle"></div>
-        <div class="purpleRectangleStyle"></div>
+        <div class="bigRectangleStyle"></div>
+        <div class="smallRectangleStyle">GAY</div>
     </div>
 
     <script src="script.js"></script>
