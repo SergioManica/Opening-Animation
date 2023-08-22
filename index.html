@@ -16,6 +16,30 @@
             margin: 0;
         }
 
+        .whiteRectangleStyle {
+            background-color: white;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .purpleRectangleStyle {
+            background-color: #DE81F4;
+            width: 50vw;
+            height: 100vh;
+        }
+
+        .leftColumn {
+            position: absolute;
+            top: -150%;
+        }
+
+        .rightColumn {
+            position: absolute;
+            right: 0;
+            bottom: -150%;
+        }
+
+
         .circleSettings {
             position: absolute;
             border-radius: 50%;
@@ -46,9 +70,12 @@
             background-color: #0BA4B9;
             position: absolute;
             inset: 0;
+            text-align: center;
+            font-size: 3rem;
         }
 
         .test {
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: start;
@@ -66,11 +93,30 @@
 
 <body>
     <div class="test">Welcome</div>
-    <div class="initialBackground"></div>
-    <div class="circle1 circleSettings"></div>
-    <div class="circle2 circleSettings"></div>
-    <div class="circle3 circleSettings"></div>
-
+    <div #initialBackground class="initialBackground">
+        <strong>
+            Animation of Rectangles<br />
+        </strong>
+        Press '1' to play <br />
+        Press 'Q' to reverse <br />
+        <br />
+        <strong>
+            Animation of Circles <br />
+        </strong>
+        Press '2' to play<br />
+        Press 'W' to reverse <br />
+    </div>
+    <div #circle1 class="circle1 circleSettings"></div>
+    <div #circle2 class="circle2 circleSettings"></div>
+    <div #circle3 class="circle3 circleSettings"></div>
+    <div #leftColumn class="leftColumn">
+        <div class="purpleRectangleStyle"></div>
+        <div class="whiteRectangleStyle"></div>
+    </div>
+    <div #rightColumn class="rightColumn">
+        <div class="whiteRectangleStyle"></div>
+        <div class="purpleRectangleStyle"></div>
+    </div>
 
     <script src="script.js"></script>
 
